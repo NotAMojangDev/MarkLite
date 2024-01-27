@@ -1,0 +1,19 @@
+{
+    "name": "marklite",
+    "displayName": "MarkLite",
+    "author": "NotAMojangDev",
+    "license": "MIT",
+    "version": "0.0.1",
+    "description": "(I thought it was a) Lightweight text editor",
+    "main": "./src/main.js",
+    "scripts": {
+        "start": "electron .",
+        "build-mac": "electron-packager . MarkLite --overwrite --platform=darwin --icon=icon.icns --ignore=README.md --ignore=.gitignore --ignore=node_modules --ignore=icon.icns --ignore=icon.ico --ignore=icon.png --ignore=samples",
+        "build-win": "electron-packager . MarkLite --overwrite --platform=win32 --icon=icon.ico --ignore=README.md --ignore=.gitignore --ignore=node_modules --ignore=icon.icns --ignore=icon.ico --ignore=icon.png --ignore=samples",
+        "build-linux": "electron-packager . MarkLite --overwrite --platform=linux --icon=icon.png --ignore=README.md --ignore=.gitignore --ignore=node_modules --ignore=icon.icns --ignore=icon.ico --ignore=icon.png --ignore=samples"
+    },
+    "devDependencies": {
+        "@electron/packager": "^18.0.0",
+        "electron": "^27.1.2"
+    }
+}
